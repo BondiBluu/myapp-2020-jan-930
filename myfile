@@ -1,0 +1,8 @@
+node{
+    stage('SCM Checkout'){
+      git 'https://github.com/BondiBluu/myapp-2020-jan-930'
+      }
+    stage('Compile-Package'){
+      sh 'mvn package'
+      }
+   }
